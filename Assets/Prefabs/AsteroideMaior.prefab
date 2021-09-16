@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9002598913589636322}
   - component: {fileID: 9002598913589636321}
   m_Layer: 8
-  m_Name: Asteroide
+  m_Name: AsteroideMaior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meuRigidbody: {fileID: 9002598913589636322}
+  prefabAsteroidMenor: {fileID: 9002598913589636323, guid: c8e9616d56976e344ad7ba344e0d91f8, type: 3}
   velocidadeMaxima: 2
+  qtdAsteroide: 3
 --- !u!50 &9002598913589636322
 Rigidbody2D:
   serializedVersion: 4

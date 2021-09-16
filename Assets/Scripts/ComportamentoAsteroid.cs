@@ -5,7 +5,9 @@ using UnityEngine;
 public class ComportamentoAsteroid : MonoBehaviour
 {
     public Rigidbody2D meuRigidbody;
+    public ComportamentoAsteroid prefabAsteroidMenor;
     public float velocidadeMaxima = 1.0f;
+    public int qtdAsteroide = 3;
     void Start()
     {
        Vector2 direcao = Random.insideUnitCircle;
@@ -17,5 +19,13 @@ public class ComportamentoAsteroid : MonoBehaviour
     {
         Destroy(gameObject);
         Destroy(outro.gameObject);
+        for (int i=0; i < qtdAsteroide; i++)
+        {
+
+            Instantiate(prefabAsteroidMenor,
+            meuRigidbody.position,
+            Quaternion.identity);
+
+        }
     }
 }

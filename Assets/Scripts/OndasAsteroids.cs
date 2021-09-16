@@ -15,6 +15,7 @@ public class OndasAsteroids : MonoBehaviour
             Vector3 posicao = new Vector3(x,y,0.0f);
             Instantiate(prefabsAsteroid,posicao,Quaternion.identity);
         }
+        
     }
 
     
